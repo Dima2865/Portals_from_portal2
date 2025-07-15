@@ -19,6 +19,12 @@ public class PlayerControls : MonoBehaviour
 
         // Запрещаем Rigidbody движение под воздействием Physics
         rb.freezeRotation = true;
+
+        // Скрыть курсор
+        Cursor.visible = false;
+
+        // Зафиксировать курсор в центре экрана
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
