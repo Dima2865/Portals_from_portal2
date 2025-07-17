@@ -7,18 +7,6 @@ public class Teleporter : MonoBehaviour
 {
     public Teleporter Other;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay(Collider other)
     {
         float zPos = transform.worldToLocalMatrix.MultiplyPoint3x4(other.transform.position).z;
